@@ -1,0 +1,38 @@
+.mountains {
+    width: 100%;
+    background-image: url("../img/bg/mountains.jpg");
+    @include cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mountains-wrap {
+      position: relative;
+      min-height: 560px;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+  }
+
+  .mountains-mask {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+  }
+
+  .mountains-tagline { 
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .mountains-title {
+      display: block;
+      width: 37%;
+      text-align: center;
+     // margin-bottom: 35px;
+  }

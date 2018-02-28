@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  font-family: 'PT Sans', 'Arial', sans-serif; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff; }
+
+.town-title {
+  font-size: 21px;
+  color: #000000; }
+
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  padding-top: 20px;
+  background-color: #fff; }
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0;
+  z-index: 10; }
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%; }
+
+.nav-item {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle; }
+
+.nav-item:nth-child(2) {
+  margin-right: 15%; }
+
+.nav-link {
+  font-weight: bold;
+  color: #262626; }
+  .nav-link:hover {
+    color: #81b3d2; }
+  .nav-link:active {
+    color: #b9d5e6; }
+
+.active {
+  color: #9e897b; }
+
+.mountains {
+  width: 100%;
+  background-image: url("../img/bg/mountains.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.mountains-wrap {
+  position: relative;
+  min-height: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.mountains-mask {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.mountains-tagline {
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.mountains-title {
+  display: block;
+  width: 37%;
+  text-align: center; }
