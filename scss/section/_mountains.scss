@@ -4,22 +4,17 @@
     @include cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-top: 115px;
   }
 
   .mountains-wrap {
-      position: relative;
-      min-height: 560px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-end;
       align-items: center; 
   }
 
-  .mountains-mask {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-  }
 
   .mountains-tagline { 
       width: 100%;
@@ -28,11 +23,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-top: 57px;
+      padding-bottom: 57px;
+      margin-top: -1px;
   }
 
   .mountains-title {
       display: block;
       width: 37%;
       text-align: center;
-     // margin-bottom: 35px;
+      margin-bottom: 35px;
   }
+
+ 

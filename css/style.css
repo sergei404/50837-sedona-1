@@ -50,7 +50,7 @@ a {
   margin: 0 auto;
   background-color: #fff; }
 
-.town-title {
+.title {
   font-size: 21px;
   color: #000000; }
 
@@ -110,26 +110,26 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
-
-.mountains-wrap {
-  position: relative;
-  min-height: 560px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-top: 115px; }
+
+.mountains-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-
-.mountains-mask {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0; }
 
 .mountains-tagline {
   width: 100%;
@@ -146,9 +146,111 @@ a {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  margin-top: -1px; }
 
 .mountains-title {
   display: block;
   width: 37%;
+  text-align: center;
+  margin-bottom: 35px; }
+
+.town-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.town-item:first-child, .town-item:nth-child(3) {
+  background-color: #81b3d2;
+  color: #fff; }
+  .town-item:first-child .town-title, .town-item:nth-child(3) .town-title {
+    color: #fff; }
+
+.town-item:last-child {
+  background-color: #b9d5e6; }
+
+.town-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.town-real {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 33.3%;
+  flex-basis: 33.3%;
+  padding-top: 50px;
+  padding-bottom: 60px; }
+  .town-real__service {
+    padding-top: 55px;
+    padding-bottom: 90px; }
+
+.town-title {
+  display: block;
+  width: 39%;
   text-align: center; }
+  .town-title__service {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+
+.town-number {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.town-tagline {
+  display: block;
+  width: 75%;
+  text-align: center; }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.card-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 55px; }
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px; }
+
+.card-text {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 50px; }

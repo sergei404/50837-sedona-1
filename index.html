@@ -9,7 +9,7 @@
   <body>
 
    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>-->
-     <div class="container">
+   <div class="container">
        <header class="header">
          <div class="logo">
            <a href="#" class="logo-link">
@@ -25,67 +25,64 @@
            </ul>
          </nav>
        </header>
+
+
+
        <main class="main-content">
+
          <section class="mountains">
           <div class="mountains-wrap">
-           <div class="mountains-welcome">
              <img src="img/content/welcome.png" alt="welcome" class="mountains-img">
-           </div>
-           <div class="mountains-mask">
-             <img src="img/content/mask.png" alt="mask" class="mountains-mask__img">
-           </div>
+             <img src="img/content/mask.png"  alt="mask" class="mountains-mask__img">
           </div>
            <div class="mountains-tagline">
-              <h2 class="mountains-title">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+              <h2 class="mountains-title title">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
               <p class="mountains-text">рассмотрим 5 причины по которым седона круче, чем гранд каньон!</p>
             </div>
          </section>
+
          <section class="town">
            <ul class="town-list">
              <li class="town-item">
                <div class="town-wrap">
                   <div class="town-real">
-                      <h2 class="town-title">настоящий городок</h2>
+                      <h2 class="town-title title">настоящий городок</h2>
                       <p class="town-number">&mdash; №1 &mdash;</p>
-                      <p class="town-tagline">седона - не аттракцион для туристов, там чечет своя жизнь </p>
+                      <p class="town-tagline">седона - не аттракцион для туристов, там течет своя жизнь </p>
                    </div>
-                   <div class="town-img">
-                    <img src="img/content/town.jpg" alt="городок">
-                  </div>
+                    <img src="img/content/town.jpg" alt="town">
                </div>
              </li>
              <li class="town-item">
                <div class="town-wrap">
-                  <div class="town-services">
+                  <div class="town-real town-real__service">
                       <svg class="town-svg" width="20" height="20" fill="#81b3d2">
                           <use xlink:href="./img/sprite.svg#icon-1"></use>
                       </svg>
-                      <h2 class="town-title">жилье</h2>
+                      <h2 class="town-title__service title">жилье</h2>
                       <p class="town-tagline">рекомендуем пожить в настоящем мотеле,все как в кино!</p>
                   </div>
-                  <div class="town-servises">
+                  <div class="town-real town-real__service">
                       <svg class="town-svg" width="20" height="20" fill="#81b3d2">
                           <use xlink:href="./img/sprite.svg#icon-2"></use>
                       </svg>
-                      <h2 class="town-title">еда</h2>
+                      <h2 class="town-title__service title">еда</h2>
                       <p class="town-tagline">всегда заказывайте фирменный бургер, вы не разачаруетесь!</p>
                   </div>
-                  <div class="town-services">
+                  <div class="town-real town-real__service">
                       <svg class="town-svg" width="20" height="20" fill="#81b3d2">
                           <use xlink:href="./img/sprite.svg#icon-3"></use>
                       </svg>
-                      <h2 class="town-title">сувениры</h2>
-                      <p class="town-tagline">не только китайсого,но и местного протзводства</p>
+                      <h2 class="town-title__service title">сувениры</h2>
+                      <p class="town-tagline">не только китайского,но и местного производства</p>
                    </div>
                </div>
              </li>
              <li class="town-item">
                <div class="town-wrap">
-                  <div class="town-img">
                       <img src="img/content/devil's bridge.jpg" alt="devil's bridge">
-                  </div>
                   <div class="town-real">
-                      <h2 class="town-title">там есть мост дьявола</h2>
+                      <h2 class="town-title title">там есть мост дьявола</h2>
                       <p class="town-number">&mdash; №2 &mdash;</p>
                       <p class="town-tagline">да, по нему можно пройти если конечно вы осмелитесь</p>
                    </div>
@@ -93,18 +90,18 @@
              </li>
              <li class="town-item">
                <div class="town-wrap">
-                  <div class="-town-description">
-                      <h2 class="town-title">небольшая площадь</h2>
+                  <div class="town-real">
+                      <h2 class="town-title title">небольшая площадь</h2>
                       <p class="town-number">&mdash; №3 &mdash;</p>
                       <p class="town-tagline">все достопримечательности находятся очень близко</p>
                     </div>
-                    <div class="town-description">
-                      <h2 class="town-title">красивая дорога</h2>
+                    <div class="town-real">
+                      <h2 class="town-title title">красивая дорога</h2>
                       <p class="town-number">&mdash; №4 &mdash;</p>
                       <p class="town-tagline">ехать в седону из лас-вегаса совсем не скучно</p>
                     </div>
-                    <div class="town-description">
-                      <h2 class="town-title">мало туристов</h2>
+                    <div class="town-real">
+                      <h2 class="town-title title">мало туристов</h2>
                       <p class="town-number">&mdash; №5 &mdash;</p>
                       <p class="town-tagline">большинство едет в гранд каньон и толпится там</p>
                     </div>
@@ -112,10 +109,11 @@
              </li>
            </ul>
          </section>
+
          <section class="card">
            <div class="card-wrap">
              <b class="card-title">заинтересовались?</b>
-             <p class="card-text">укажите предпологаемые даты поездки, и мы покажем вам лучшее предложения гостиниц в седоне</p>
+             <p class="card-text">укажите предпологаемые даты поездки,<br> и мы покажем вам лучшее предложения гостиниц в седоне</p>
              <a href="#" class="card-link">поиск гостиниц в седоне</a>
              <div class="form-wrap">
                <form action="/echo" method="post" class="form">
@@ -152,7 +150,10 @@
            <div class="card-map">
            </div>
          </section>
+
        </main>
+
+
        <footer class="footer">
          <div class="footer-wrap">
           <div class="footer-vizit">#vizitsedona</div>
