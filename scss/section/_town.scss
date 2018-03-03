@@ -4,21 +4,25 @@
 }
 
 .town-item {
+    background-color: $blue;
     &:first-child,
-    &:nth-child(3) {
-        background-color: $blue;
+    &:nth-child(2) {
         color: #fff;
         .town-title {
             color: #fff;
         }
     }
     &:last-child {
-        background-color: lighten($blue, 15%);
+        background-color: lighten($blue, 25%);
     }
 }
 
 .town-wrap {
     display: flex;
+    &__list {
+        background-color: #fff;
+        color: $dark;
+    }
 }
 
 .town-real {
@@ -56,4 +60,7 @@
     display: block;
     width: 75%;
     text-align: center;
+    &__small {
+        width: 70%;
+    }
 }

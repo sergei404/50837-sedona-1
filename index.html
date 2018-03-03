@@ -52,31 +52,29 @@
                    </div>
                     <img src="img/content/town.jpg" alt="town">
                </div>
-             </li>
-             <li class="town-item">
-               <div class="town-wrap">
-                  <div class="town-real town-real__service">
-                      <svg class="town-svg" width="20" height="20" fill="#81b3d2">
+               <ul class="town-wrap town-wrap__list">
+                  <li class="town-real town-real__service">
+                      <svg class="town-svg" width="75" height="72" fill="#81b3d2">
                           <use xlink:href="./img/sprite.svg#icon-1"></use>
                       </svg>
                       <h2 class="town-title__service title">жилье</h2>
                       <p class="town-tagline">рекомендуем пожить в настоящем мотеле,все как в кино!</p>
-                  </div>
-                  <div class="town-real town-real__service">
-                      <svg class="town-svg" width="20" height="20" fill="#81b3d2">
+                    </li>
+                  <li class="town-real town-real__service">
+                      <svg class="town-svg" width="75" height="72" fill="#81b3d2">
                           <use xlink:href="./img/sprite.svg#icon-2"></use>
                       </svg>
                       <h2 class="town-title__service title">еда</h2>
                       <p class="town-tagline">всегда заказывайте фирменный бургер, вы не разачаруетесь!</p>
-                  </div>
-                  <div class="town-real town-real__service">
-                      <svg class="town-svg" width="20" height="20" fill="#81b3d2">
+                    </li>
+                  <li class="town-real town-real__service">
+                      <svg class="town-svg" width="64" height="76" fill="#81b3d2">
                           <use xlink:href="./img/sprite.svg#icon-3"></use>
                       </svg>
                       <h2 class="town-title__service title">сувениры</h2>
                       <p class="town-tagline">не только китайского,но и местного производства</p>
-                   </div>
-               </div>
+                    </li>
+                  </ul>
              </li>
              <li class="town-item">
                <div class="town-wrap">
@@ -89,23 +87,23 @@
                </div>
              </li>
              <li class="town-item">
-               <div class="town-wrap">
-                  <div class="town-real">
+               <ul class="town-wrap">
+                  <li class="town-real">
                       <h2 class="town-title title">небольшая площадь</h2>
                       <p class="town-number">&mdash; №3 &mdash;</p>
                       <p class="town-tagline">все достопримечательности находятся очень близко</p>
-                    </div>
-                    <div class="town-real">
+                  </li>
+                    <li class="town-real">
                       <h2 class="town-title title">красивая дорога</h2>
                       <p class="town-number">&mdash; №4 &mdash;</p>
-                      <p class="town-tagline">ехать в седону из лас-вегаса совсем не скучно</p>
-                    </div>
-                    <div class="town-real">
+                      <p class="town-tagline town-tagline__small">ехать в седону из лас-вегаса совсем не скучно</p>
+                    </li>
+                    <li class="town-real">
                       <h2 class="town-title title">мало туристов</h2>
                       <p class="town-number">&mdash; №5 &mdash;</p>
                       <p class="town-tagline">большинство едет в гранд каньон и толпится там</p>
-                    </div>
-               </div>
+                    </li>
+                  </ul>
              </li>
            </ul>
          </section>
@@ -115,35 +113,35 @@
              <b class="card-title">заинтересовались?</b>
              <p class="card-text">укажите предпологаемые даты поездки,<br> и мы покажем вам лучшее предложения гостиниц в седоне</p>
              <a href="#" class="card-link">поиск гостиниц в седоне</a>
-             <div class="form-wrap">
+             <div class="form-section">
                <form action="/echo" method="post" class="form">
-                <div class="form-block">
+               <div class="form-wrap">
+                 <div class="form-block__grupp">
                     <div class="form-row">
-                        <lebel class="form-lebel">
-                            <div>дата заезда</div>
+                        <lebel class="form-block">
+                            <div class="form-block__date">дата заезда:</div>
                             <input type="text" class="form-input" value="24 апреля 2017">
                         </lebel>
                     </div>
                     <div class="form-row">
-                        <lebel class="form-lebel">
-                            <div>дата выезда</div>
+                        <lebel class="form-block">
+                            <div class="form-block__date">дата выезда:</div>
                             <input type="text" class="form-input" value="4 июля 2017">
                         </lebel>
                     </div>
                     <div class="form-row">
-                        <lebel class="form-lebel">
-                             <div>взрослые</div>
-                             <input type="text" class="form-input" value="2">
+                        <lebel class="form-block form-block__adults">
+                            <div>взрослые:</div>
+                            <input type="text" class="form-input form-input__adults" value="2">
                         </lebel>
-                        <lebel class="form-lebel">
-                            <div>дети</div>
+                        <lebel class="form-block form-block__adults">
+                            <div class="form-block__child">дети:</div>
                             <input type="text" class="form-input" value="0">
                         </lebel>
                     </div>
-                    <div class="form-button">
-                        <button type="submin" class="form-submit">найти</button>
-                    </div> 
-                </div>
+                 </div>
+                 <button type="submit" class="form-submit">найти</button>
+               </div>
               </form>
              </div>
            </div>
