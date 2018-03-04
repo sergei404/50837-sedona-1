@@ -42,9 +42,17 @@
 }
 
 .form-section {
+    display: none;
+    position: absolute;
+    top: 33.1%;
+    left: 27.5%;
     width: 45%;
     padding: 55px;
     background-color: #fff;
+}
+
+.form-show {
+    display: block;
 }
 
 .form {
@@ -111,11 +119,18 @@
         background-color: darken($blue, 15%);
       }
       &:active {
-        filter: grayscale(20%);
+         filter:  brightness(50%);
     }      
   }
 
   .card-map {
-
+      background-image: url(../img/bg/map.jpg);
+      @include cover;
+      width: 100%;
+      min-height: 593px;
+      iframe {
+        width: 100%;
+        min-height: 593px; 
+      }
   }
   

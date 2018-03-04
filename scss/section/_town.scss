@@ -33,13 +33,31 @@
     flex-basis: 33.3%;
     padding-top: 50px;
     padding-bottom: 60px;
-    &__service {
-        padding-top: 55px;
-        padding-bottom: 90px;
-    }
 }
 
-
+.town-real__service{
+    padding-top: 55px;
+    padding-bottom: 90px;
+    &::before {
+        content: "";
+        display: table;
+    }
+    &--one::before {
+        width: 75px;
+        height: 72px;
+        background-image: url("../icon/icon-1.svg");
+    }
+    &--two::before {
+        width: 74px;
+        height: 70px;
+        background-image: url("../icon/icon-3.svg");
+    }
+    &--three::before {
+        width: 64px;
+        height: 75px;
+        background-image: url("../icon/icon-2.svg");
+    }
+}
 
 .town-title {
     display: block;

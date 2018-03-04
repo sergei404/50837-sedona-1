@@ -30,44 +30,44 @@
             <form action="" class="shape-form">
               <div class="shape-wrap">
                 <fieldset class="shape-block">
-                    <legend>Инфраструктура:</legend>
+                    <legend class="shape-title">Инфраструктура:</legend>
                     <label class="shape-form__checkbox">
-                         <input class="shape-form__-input" type="checkbox" checked>
+                         <input class="shape-form__input" type="checkbox" checked>
                          <div class="shape-form__fake"></div>
                          <div class="shape-form__title">бассейн</div>
                     </label>
                     <label class="shape-form__checkbox">
-                            <input class="shape-form__-input" type="checkbox">
+                            <input class="shape-form__input" type="checkbox">
                             <div class="shape-form__fake"></div>
                             <div class="shape-form__title">парковка</div>
                        </label>
                        <label class="shape-form__checkbox">
-                            <input class="shape-form__-input" type="checkbox">
+                            <input class="shape-form__input" type="checkbox">
                             <div class="shape-form__fake"></div>
                             <div class="shape-form__title">wi-fi</div>
                        </label>
                 </fieldset>
                 <fieldset class="shape-block">
-                        <legend>тип жилья:</legend>
+                        <legend class="shape-title">тип жилья:</legend>
                         <label class="shape-form__checkbox">
-                             <input class="shape-form__-input" type="checkbox" checked>
+                             <input class="shape-form__input" type="checkbox" checked>
                              <div class="shape-form__fake"></div>
                              <div class="shape-form__title">гостиница</div>
                         </label>
                         <label class="shape-form__checkbox">
-                                <input class="shape-form__-input" type="checkbox" checked>
+                                <input class="shape-form__input" type="checkbox" checked>
                                 <div class="shape-form__fake"></div>
                                 <div class="shape-form__title">мотель</div>
                            </label>
                            <label class="shape-form__checkbox">
-                                <input class="shape-form__-input" type="checkbox" checked>
+                                <input class="shape-form__input" type="checkbox" checked>
                                 <div class="shape-form__fake"></div>
                                 <div class="shape-form__title">апартаменты</div>
                            </label>
                     </fieldset>
                 </div>
                 <fieldset class="shape-block">
-                    <legend>Стоимость в сутки (Р):</legend>
+                    <legend class="shape-title">Стоимость в сутки (Р):</legend>
                     <div class="shape-price__controls">
                             <label class="shape-min__price"> 
                                 <input type="text" class="shape-price__input" value="0">
@@ -103,7 +103,8 @@
                     <button class="hotels-sorting__submit"><span class="visually-hidden">вниз</span></button>
                 </div>
             </div>
-            <div class="hotels-block">
+            <ul class="hotels-list">
+            <li class="hotels-item">
               <div class="hotels-description">
                 <div class="hotels-img">
                     <img class="hotels-img__amara" src="img/content/amara.jpg" alt="amara">
@@ -124,8 +125,8 @@
                   <div class="hotels-rating__stars"></div>
                   <div class="hotels-rating__stock">Рейтинг: 8,5</div>
               </div>
-            </div>
-            <div class="hotels-block">
+            </li>
+            <li class="hotels-item">
                     <div class="hotels-description">
                       <div class="hotels-img">
                           <img class="hotels-img__amara" src="img/content/amara.jpg" alt="amara">
@@ -146,8 +147,8 @@
                         <div class="hotels-rating__stars"></div>
                         <div class="hotels-rating__stock">Рейтинг: 8,5</div>
                     </div>
-                  </div>
-                  <div class="hotels-block">
+                </li>
+                  <li class="hotels-item">
                         <div class="hotels-description">
                           <div class="hotels-img">
                               <img class="hotels-img__amara" src="img/content/amara.jpg" alt="amara">
@@ -168,7 +169,8 @@
                             <div class="hotels-rating__stars"></div>
                             <div class="hotels-rating__stock">Рейтинг: 8,5</div>
                         </div>
-                      </div>        
+                    </li>
+                </ul>        
         </section>
     </main>
     <footer class="footer">
@@ -205,8 +207,8 @@
              <div class="footer-copyright">
                <div class="footer-by">website by</div>
                <div class="footer-html">
-                 <a href="" class="footer-html__link">
-                   <span class="visually-hidden">htmlacademy</span>
+                 <a href="https://up.htmlacademy.ru/htmlcss/20" class="footer-html__link">
+                   <span class="visually-hidden">htmlacademy></span>
                    <svg class="footer-svg" width="115" height="40" fill="#81b3d2">
                        <use xlink:href="./img/sprite.svg#logo-htmlacademy"></use>
                    </svg>
@@ -216,5 +218,6 @@
             </div>
           </footer>
    </div>
+   
 </body>
 </html>

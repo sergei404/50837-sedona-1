@@ -1,0 +1,74 @@
+.shape {
+    width: 100%;
+    min-height: 225%;
+    background-image: url("../img/bg/filter background.jpg");
+    @include cover;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.shape-form {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.shape-wrap {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.shape-block {
+    border: 0;
+}
+
+.shape-title {
+   margin-bottom: 30px;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+
+
+
+.shape-form__checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  
+}
+
+.shape-form__input {
+    position: absolute;
+    left: -9999px; 
+}
+
+.shape-form__fake {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1.5px solid #fff;
+    
+  }
+
+ .shape-form__input:checked {
+     &+.shape-form__fake {
+         &::before {
+            border: 3px solid #fff;
+            content: "";
+            display: table;
+            position: absolute;
+            top: 0;
+            left: 4px;
+            width: 17px;
+            height: 10px;
+            border-color: #fff;
+            border-top-style: none;
+            border-right-style: none;
+            transform: rotate(-45deg);
+         }
+    }
+ }
+
+ 
