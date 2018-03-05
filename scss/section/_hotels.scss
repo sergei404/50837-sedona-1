@@ -1,0 +1,97 @@
+.hotels {
+    width: 100%;
+    padding-top: 35px;
+}
+
+.hotels-sorting {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 35px;
+}
+
+.hotels-sorting__wrap {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.hotels-sorting__title {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+.hotels-sorting__list {
+    display: flex;
+}
+
+.hotels-sorting__item {
+    margin-left: 30px;
+}
+
+.hotels-list {
+    &:last-child {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+}
+
+.hotels-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+.hotels-description {
+    display: flex;
+    align-items: center;
+    .hotels-img {
+        margin-right: 30px;
+    }
+}
+
+.hotels-portrait {
+    display: flex;
+    flex-direction: column;
+}
+
+.town-title__hotels {
+    width: 235px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.hotels-price {
+    display: flex;
+}
+
+.hotels-link__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotels-link {
+    padding: 5px 27px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    &__blue {
+        background-color: $blue;
+        margin-right: 10px;
+    }
+    &__red {
+        background-color: $broun;
+    }
+}
+
+.hotels-rating__list {
+    display: flex;
+}
