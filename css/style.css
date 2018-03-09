@@ -705,11 +705,6 @@ img {
 .hotels-sorting__item {
   margin-left: 30px; }
 
-.hotels-sorting__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .hotels-sorting__submit {
   background-color: transparent;
   border: 0;
@@ -717,9 +712,10 @@ img {
   .hotels-sorting__submit::before {
     content: "";
     display: inline-block;
-    border: 20px solid #0074d9;
-    border-right-width: 10px;
-    border-left-width: 10px;
+    vertical-align: middle;
+    border: 12px solid #0074d9;
+    border-right-width: 6px;
+    border-left-width: 6px;
     border-right-color: transparent;
     border-left-color: transparent; }
 

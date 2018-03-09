@@ -33,7 +33,7 @@
 }
 
 .hotels-sorting__button {
-    display: flex;
+   //display: flex;
 }
 
 .hotels-sorting__submit {
@@ -43,9 +43,10 @@
     &::before {
         content: "";
         display: inline-block;
-        border: 20px solid #0074d9;
-        border-right-width: 10px;
-        border-left-width: 10px;
+        vertical-align: middle;
+        border: 12px solid #0074d9;
+        border-right-width: 6px;
+        border-left-width: 6px;
         border-right-color: transparent;
         border-left-color: transparent;
     }
@@ -57,6 +58,15 @@
 
 .hotels-sorting__down::before {
     border-bottom-width: 0;
+}
+
+.hotels-sorting__active::before {
+   // border-top-width: 0;
+   // border: 12px solid #cacaca;
+    //border-right-width: 6px;
+    //border-left-width: 6px;
+   // border-right-color: transparent;
+   // border-left-color: transparent;
 }
 
 .hotels-list {
