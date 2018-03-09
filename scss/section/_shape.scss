@@ -152,23 +152,23 @@
   }
   
   .shape-toggle {
-    width: 4px;
-    height: 4px;
-    background-color: #fff;
-    border: 8px solid #000;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+   // width: 4px;
+   // height: 4px;
+   // background-color: #fff;
+    //border: 8px solid #ffffff;
+   // border-radius: 50%;
+   // box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
-   /* display: block;
+    display: block;
     position: absolute;
     top: -9px;
     width: 14px;
     height: 14px;
     background-color: #000;
-    //border: 8px solid #ffffff;
+    border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;*/
+   // box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
     &:hover {
         background-color: #1c4f80; 
     }

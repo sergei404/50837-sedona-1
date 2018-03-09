@@ -1,7 +1,7 @@
 .card {
-    position: relative;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card-wrap {
@@ -42,17 +42,21 @@
 }
 
 .form-section {
-    display: none;
+   // height: 0;
+   // overflow:hidden;
+   display: none;
+   padding: 55px;
     position: absolute;
     top: 33.1%;
     left: 27.5%;
     width: 45%;
-    padding: 55px;
     background-color: #fff;
 }
 
 .form-show {
     display: block;
+   // height: 100%;
+   // padding: 55px;
 }
 
 .form {
@@ -75,6 +79,7 @@
   }
 
   .form-block {
+    position: relative;
     display: flex;
     align-items: center;
     flex: 1; 
@@ -92,6 +97,7 @@
   }
 
   .form-input {
+    position: relative;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -103,14 +109,21 @@
     &__adults {
         padding: 10px 10px;
     }
-    &:hover + .form-input__link:hover{
+    &:hover {
         background-color: lighten($blue, 15%);
+    }
+    &:focus {
+        border: 2px solid lighten($blue, 15%);
+        background-color: #fff;
     }
   }
 
   .form-input__link {
-      padding: 5px;
-      background-color: lighten($blue, 25%);
+     position: absolute;
+     left: 91%;
+     top: 5%;
+     padding: 5px;
+      // background-color: lighten($blue, 25%);
       &:hover {
          // background-color: lighten($blue, 15%);
           svg {
@@ -125,8 +138,9 @@
   }
 
   .form-input__button {
-      padding: 11px;
-      background-color: lighten($blue, 25%);
+      //padding: 11px;
+     // background-color: lighten($blue, 25%);
+      background: transparent;
       border: 0;
       outline: 0;
       display: flex;
