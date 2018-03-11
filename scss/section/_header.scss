@@ -3,8 +3,8 @@
   width: 100%;
   min-height: 60px;
   padding-top: 20px;
- // padding-right: 6%;
- // padding-left: 6%;
+  padding-right: 6%;
+  padding-left: 6%;
   background-color: #fff;
 }
 
@@ -19,29 +19,30 @@
 
   .nav-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
 
   .nav-item {
     width: 20%;
-    text-align: center;
+    text-align: right;
     vertical-align: middle;
   }
-  //.nav-item:first-child,
+  .nav-item:first-child,
   .nav-item:nth-child(2) {
-     margin-right: 15%;
-    //text-align: left;
+      text-align: left;
   }
 
- //.nav-item:nth-child(3),
- //.nav-item:last-child {
-   // text-align: right;
- // }
+  .nav-item:nth-child(2) {
+      margin-right: 11.5%;
+  }
+
 
   .nav-link {
     font-weight: bold;
     color: #262626;
+    transition-duration: .5s;
+    letter-spacing: .2px;
     &:hover {
       color: $blue;
     }

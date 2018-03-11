@@ -13,7 +13,7 @@
         }
     }
     &:last-child {
-        background-color: lighten($blue, 25%);
+        background-color: #eee;
     }
 }
 
@@ -22,6 +22,9 @@
     &__list {
         background-color: #fff;
         color: $dark;
+    }
+    img {
+        width: 66.6%;
     }
 }
 
@@ -45,17 +48,17 @@
     &--one::before {
         width: 75px;
         height: 72px;
-        background-image: url("../icon/icon-1.svg");
+        background-image: url("../img/icons/icon-1.svg");
     }
     &--two::before {
         width: 74px;
         height: 70px;
-        background-image: url("../icon/icon-3.svg");
+        background-image: url("../img/icons/icon-3.svg");
     }
     &--three::before {
         width: 64px;
         height: 75px;
-        background-image: url("../icon/icon-2.svg");
+        background-image: url("../img/icons/icon-2.svg");
     }
 }
 
