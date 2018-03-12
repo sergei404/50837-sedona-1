@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  line-height: 21px;
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -58,6 +59,7 @@ img {
 
 .title {
   font-size: 21px;
+  line-height: 26px;
   color: #000000; }
 
 .header {
@@ -304,18 +306,22 @@ img {
   font-size: 21px;
   font-weight: bold;
   color: #fff;
-  background-color: #766357; }
+  background-color: #766357;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s; }
   .card-link:hover {
-    background-color: #615248; }
+    background-color: #604e43; }
   .card-link:active {
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%); }
+    color: #8b827c;
+    background-color: #503e33; }
 
 .form {
   font-weight: bold;
+  display: none;
   padding: 55px;
   position: absolute;
-  top: 33.1%;
+  top: 31.1%;
   left: 27.5%;
   width: 45%;
   background-color: #fff; }
@@ -370,15 +376,15 @@ img {
   text-transform: uppercase;
   padding: 10px 15px;
   width: 100%;
-  background-color: #dfecf4;
+  background-color: #f2f2f2;
   border: 0;
   outline: 0; }
   .form-input__adults {
     text-align: center; }
   .form-input:hover {
-    background-color: #b9d5e6; }
+    background-color: #ebebeb; }
   .form-input:focus {
-    outline: 3px solid #b9d5e6;
+    outline: 3px solid #e5e5e5;
     background-color: #fff; }
 
 .form-input__link {
@@ -392,26 +398,19 @@ img {
 
 .form-input__button {
   position: absolute;
+  left: 85%;
   background: transparent;
   border: 0;
   outline: 0;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .form-input__button--plus {
-    left: 76%; }
+  width: 15px;
+  height: 15px; }
   .form-input__button:hover svg line {
     stroke: #000; }
   .form-input__button:active svg line {
     stroke: #81b3d2; }
+
+.form-input__button--plus {
+  left: 76%; }
 
 .form-submit {
   width: 100%;
@@ -422,12 +421,15 @@ img {
   color: #fff;
   background-color: #81b3d2;
   border: 0;
-  outline: 0; }
+  outline: 0;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s; }
   .form-submit:hover {
-    background-color: #4991be; }
+    background-color: #669ec0; }
   .form-submit:active {
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%); }
+    color: #94b9d2;
+    background-color: #5496bd; }
 
 .card-map {
   background-image: url(../img/bg/map.jpg);
@@ -486,8 +488,9 @@ img {
     .footer-list .footer-item:hover {
       background-color: #669ec0; }
     .footer-list .footer-item:active {
-      -webkit-filter: brightness(70%);
-      filter: brightness(70%); }
+      background-color: #5496bd; }
+      .footer-list .footer-item:active svg {
+        fill: #88b6d1; }
 
 .footer-copyright {
   -ms-flex-preferred-size: 33.3%;
@@ -807,9 +810,22 @@ img {
 .hotels-description {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .hotels-description .hotels-img {
-    margin-right: 30px; }
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.hotels-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 30px; }
 
 .hotels-portrait {
   display: -webkit-box;
@@ -826,7 +842,7 @@ img {
 .town-title__hotels {
   width: 230px;
   text-align: left;
-  line-height: .7; }
+  margin-bottom: 10px; }
   .town-title__hotels a {
     color: #000;
     -webkit-transition-duration: .5s;
@@ -855,11 +871,10 @@ img {
   justify-content: space-between; }
 
 .hotels-link {
-  margin-top: 15px;
+  margin-top: 12px;
   padding: 5px 27px;
   color: #fff;
-  font-weight: bold;
-  text-transform: uppercase; }
+  font-weight: bold; }
   .hotels-link__blue {
     background-color: #81b3d2;
     margin-right: 10px;
@@ -869,8 +884,8 @@ img {
     .hotels-link__blue:hover {
       background-color: #669ec0; }
     .hotels-link__blue:active {
-      -webkit-filter: contrast(85%) brightness(90%);
-      filter: contrast(85%) brightness(90%); }
+      color: #94b9d2;
+      background-color: #5496bd; }
   .hotels-link__red {
     background-color: #766357;
     -webkit-transition-duration: .5s;
@@ -879,8 +894,8 @@ img {
     .hotels-link__red:hover {
       background-color: #604e43; }
     .hotels-link__red:active {
-      -webkit-filter: contrast(55%) brightness(75%);
-      filter: contrast(55%) brightness(75%); }
+      color: #65564e;
+      background-color: #503e33; }
 
 .hotels-rating {
   display: -webkit-box;

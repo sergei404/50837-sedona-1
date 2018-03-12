@@ -31,7 +31,10 @@
             background-color: #669ec0;
         }
         &:active {
-            filter: brightness(70%);
+            background-color: #5496bd;
+            svg {
+                fill: #88b6d1;
+            }
         }
     }
 }

@@ -33,20 +33,22 @@
     font-weight: bold;
     color: #fff;
     background-color: $broun;
+    transition-duration: .5s;
     &:hover {
-        background-color: darken($broun, 7%);
+        background-color: #604e43;
     }
     &:active {
-        filter: brightness(50%);
+        color: #8b827c;
+        background-color: #503e33;
     }
 }
 
  .form {
      font-weight: bold;
-    // display: none;
+    display: none;
      padding: 55px;
      position: absolute;
-     top: 33.1%;
+     top: 31.1%;
      left: 27.5%;
      width: 45%;
      background-color: #fff;
@@ -95,17 +97,17 @@
      text-transform: uppercase;
      padding: 10px 15px;
      width: 100%;
-     background-color: lighten($blue, 25%);
+     background-color: #f2f2f2;
      border: 0;
      outline: 0;
      &__adults {
          text-align: center;
      }
      &:hover {
-         background-color: lighten($blue, 15%);
+         background-color: #ebebeb;
      }
      &:focus {
-         outline: 3px solid lighten($blue, 15%);
+         outline: 3px solid #e5e5e5;
          background-color: #fff;
      }
    }
@@ -128,20 +130,15 @@
  
    .form-input__button {
        position: absolute;
+       left: 85%;
        background: transparent;
        border: 0;
        outline: 0;
-       padding: 0;
-       margin: 0;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       &--minus {
-           //left: 55%;
-       }
-       &--plus {
-           left: 76%;
-       }
+       width: 15px;
+       height: 15px;
+       //display: flex;
+       //justify-content: center;
+       //align-items: center;
        &:hover {
          svg {
              line {
@@ -158,6 +155,10 @@
        }
    }
 
+   .form-input__button--plus {
+      left: 76%;
+   }
+
    
  
    .form-submit {
@@ -170,11 +171,13 @@
        background-color: $blue;
        border: 0;
        outline: 0;
+       transition-duration: .5s;
        &:hover {
-         background-color: darken($blue, 15%);
+         background-color: #669ec0;
        }
        &:active {
-          filter:  brightness(50%);
+          color: #94b9d2;
+          background-color: #5496bd;
      }      
    }
  
