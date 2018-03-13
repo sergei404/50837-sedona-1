@@ -601,9 +601,9 @@ img {
   transform: rotate(-45deg); }
 
 .shape-form__input:disabled + .shape-form__fake {
-  border-color: #6a6a6a; }
+  border-color: #848484; }
   .shape-form__input:disabled + .shape-form__fake::before {
-    border-color: #6a6a6a; }
+    border-color: #848484; }
 
 .shape-block__filter {
   width: 355px; }

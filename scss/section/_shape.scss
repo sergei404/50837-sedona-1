@@ -84,9 +84,9 @@
 
  .shape-form__input:disabled {
     &+.shape-form__fake {
-        border-color: #6a6a6a;
+        border-color: lighten(#6a6a6a, 10%);
         &::before{
-            border-color: #6a6a6a;
+            border-color: lighten(#6a6a6a, 10%);
         }
     }
  }
