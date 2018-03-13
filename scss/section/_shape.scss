@@ -1,9 +1,8 @@
 .shape {
     width: 100%;
-    min-height: 225%;
     background-image: url("../img/bg/filter background.jpg");
     @include cover;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 10px;
     padding-left: 6%;
     padding-right: 6%;
@@ -18,20 +17,26 @@
 .shape-wrap {
     display: flex;
     flex-basis: 50%;
-    justify-content: flex-start;
-    .shape-block {
-        margin-right: 20%;
-    }
+    justify-content: flex-start;  
 }
 
 .shape-block {
     border: 0;
+    margin: 0;
+    padding: 0;
+    &:last-child {
+        margin-left: 25.5%; 
+    }
 }
 
+
 .shape-title {
-   margin-bottom: 30px;
+   padding: 0;
+   margin: 0;
+   margin-bottom: 24px;
    font-size: 16px;
    text-transform: uppercase;
+   color: #fff;
 }
 
 
@@ -39,7 +44,7 @@
 .shape-form__checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
 }
 
@@ -50,9 +55,9 @@
 
 .shape-form__fake {
     position: relative;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
     border-radius: 3px;
     border: 2px solid #fff;
     
@@ -61,14 +66,14 @@
  .shape-form__input:checked {
      &+.shape-form__fake {
          &::before {
-            border: 3px solid #fff;
+            border: 4px solid #fff;
             content: "";
             display: table;
             position: absolute;
-            top: -2px;
+            top: 0;
             left: 4px;
-            width: 17px;
-            height: 10px;
+            width: 19px;
+            height: 11px;
             border-color: #fff;
             border-top-style: none;
             border-right-style: none;
@@ -79,15 +84,15 @@
 
  .shape-form__input:disabled {
     &+.shape-form__fake {
-        filter: opacity(70%);
+        border-color: #6a6a6a;
         &::before{
-            filter: grayscale(50%) opacity(90%); 
+            border-color: #6a6a6a;
         }
     }
  }
     
  .shape-block__filter {
-    width: 330px;
+    width: 355px;
   }
   
   .shape-title__filter {
@@ -119,15 +124,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 38px;
+    line-height: 33px;
     padding-left: 30px;
     cursor: pointer;
+  }
+
+  .shape-price__text {
+      margin-left: 5px;
   }
    
   
   .shape-price__input {
     width: 50px;
-    padding: 0 5px;
+    //padding: 0 4px;
+    margin-left: 5px;
     color: inherit;
     font: inherit;
     background: 0;
@@ -137,7 +147,7 @@
   
   .shape-range__controls {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
   
 .shape-scale {
@@ -180,7 +190,7 @@
   .shape-btn {
     display: block;
     margin: 0 auto;
-    padding: 10px 35px;
+    padding: 7px 30px;
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;

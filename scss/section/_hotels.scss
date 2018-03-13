@@ -1,6 +1,6 @@
 .hotels {
     width: 100%;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 .hotels-sorting {
@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding-left: 6%;
     padding-right: 6%;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .hotels-sorting__wrap {
@@ -29,12 +29,12 @@
 }
 
 .hotels-sorting__item {
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .hotels-sorting__link {
     color: #cacaca;
-    border-bottom: 2px dotted $blue; 
+    border-bottom: 1px dotted $blue; 
     transition-duration: .5s;
     &:hover{
         color: $blue;
@@ -49,31 +49,32 @@
     }
 }
 
+
+
 .hotels-sorting__submit {
-    background-color: transparent;
-    border: 0;
-    outline: 0;
+    display: inline-block;
     &::before {
        content: "";
        display: block;
        width: 0;
        height: 0;
-       border-right: 7px solid transparent;
-       border-left: 7px solid transparent;
-       border-top: 13px solid #cacaca;
+       border-right: 5px solid transparent;
+       border-left: 5px solid transparent;
+       border-top: 10px solid #cacaca;
        transition-duration: .5s;
     }
     &--up::before {
         transform: rotate(180deg);
+        margin-right: 10px;
     }
     &:hover::before {
-        border-top: 13px solid #000;
+        border-top: 10px solid #000;
     }
     &:active::before {
-        border-top: 13px solid $blue;
+        border-top: 10px solid $blue;
     }
     &--active::before {
-        border-top: 13px solid $blue; 
+        border-top: 10px solid $blue; 
     }
 }
 
@@ -110,15 +111,17 @@
 }
 
 .hotels-portrait {
+    min-height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.town-title__hotels {
+.title__hotels {
     width: 230px;;
     text-align: left;
-    margin-bottom: 10px;
+    line-height: 22px;
+    letter-spacing: .2px;
      a {
        color: #000;
        transition-duration: .5s;
@@ -143,7 +146,7 @@
 
 .hotels-link {
     margin-top: 12px;
-    padding: 5px 27px;
+    padding: 3px 16px;
     color: #fff;
     font-weight: bold;
     &__blue {
@@ -185,10 +188,10 @@
 }
 
 .hotels-rating_item {
-    margin-left: 3px;
+    margin-left: 5px;
 }
 
 .hotels-rating__stock {
-    padding: 5px 10px;
+    padding: 3px 13px;
     background-color: #f2f2f2;
 }
