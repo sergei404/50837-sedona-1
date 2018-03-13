@@ -1,19 +1,23 @@
 .mountains {
-    width: 100%;
-    background-image: url("../img/bg/mountains.jpg");
-    @include cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 115px;
+    justify-content: center; 
   }
 
   .mountains-wrap {
-      position: relative;
+      width: 100%;
+      background-image: url("../img/bg/mountains.jpg");
+      background-position: 50% 23%;
+      @include cover;
       display: flex;
-      flex-direction: column;
+      flex-direction: column; 
       justify-content: flex-end;
-      align-items: center; 
+      align-items: center;
+      padding-top: 75px; 
+  }
+
+  .mountains-wrap__img {
+      margin-bottom: 18px;
   }
 
 
@@ -25,15 +29,16 @@
       justify-content: center;
       align-items: center;
       padding-top: 57px;
-      padding-bottom: 57px;
+      padding-bottom: 50px;
       margin-top: -1px;
   }
 
   .mountains-title {
       display: block;
-      width: 37%;
+      width: 38%;
       text-align: center;
       margin-bottom: 35px;
+      letter-spacing: .1px;
   }
 
  

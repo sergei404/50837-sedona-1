@@ -34,13 +34,13 @@
     justify-content: center;
     align-items: center;
     flex-basis: 33.3%;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 60px;
 }
 
 .town-real__service{
-    padding-top: 55px;
-    padding-bottom: 90px;
+    padding-top: 58px;
+    padding-bottom: 78px;
     &::before {
         content: "";
         display: table;
@@ -64,17 +64,18 @@
 
 .town-title {
     display: block;
-    width: 39%;
+    width: 38%;
+    line-height: 23px;
     text-align: center;
     &__service {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 28px;
+        margin-bottom: 25px;
     }
 }
 
 .town-number {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .town-tagline {

@@ -119,11 +119,6 @@ img {
   color: #9e897b; }
 
 .mountains {
-  width: 100%;
-  background-image: url("../img/bg/mountains.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,11 +128,14 @@ img {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 115px; }
+  justify-content: center; }
 
 .mountains-wrap {
-  position: relative;
+  width: 100%;
+  background-image: url("../img/bg/mountains.jpg");
+  background-position: 50% 23%;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +148,11 @@ img {
   justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 75px; }
+
+.mountains-wrap__img {
+  margin-bottom: 18px; }
 
 .mountains-tagline {
   width: 100%;
@@ -169,14 +171,15 @@ img {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 57px;
-  padding-bottom: 57px;
+  padding-bottom: 50px;
   margin-top: -1px; }
 
 .mountains-title {
   display: block;
-  width: 37%;
+  width: 38%;
   text-align: center;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  letter-spacing: .1px; }
 
 .town-list {
   display: -webkit-box;
@@ -222,12 +225,12 @@ img {
   align-items: center;
   -ms-flex-preferred-size: 33.3%;
   flex-basis: 33.3%;
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 60px; }
 
 .town-real__service {
-  padding-top: 55px;
-  padding-bottom: 90px; }
+  padding-top: 58px;
+  padding-bottom: 78px; }
   .town-real__service::before {
     content: "";
     display: table; }
@@ -246,15 +249,16 @@ img {
 
 .town-title {
   display: block;
-  width: 39%;
+  width: 38%;
+  line-height: 23px;
   text-align: center; }
   .town-title__service {
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-top: 28px;
+    margin-bottom: 25px; }
 
 .town-number {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 25px;
+  margin-bottom: 20px; }
 
 .town-tagline {
   display: block;
@@ -293,17 +297,17 @@ img {
 .card-title {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 35px; }
+  margin-bottom: 32px; }
 
 .card-text {
   text-align: center;
   line-height: 1.8;
-  margin-bottom: 50px; }
+  margin-bottom: 44px; }
 
 .card-link {
-  width: 45%;
+  width: 47.4%;
   text-align: center;
-  padding: 20px 0;
+  padding: 33px;
   font-size: 21px;
   font-weight: bold;
   color: #fff;
@@ -319,12 +323,11 @@ img {
 
 .form {
   font-weight: bold;
-  display: none;
-  padding: 55px;
+  padding: 57px;
   position: absolute;
-  top: 31.1%;
-  left: 27.5%;
-  width: 45%;
+  top: 32.3%;
+  left: 26.3%;
+  width: 47.4%;
   background-color: #fff; }
 
 .form-show {
@@ -343,13 +346,13 @@ img {
   align-items: center; }
 
 .form-block__grupp {
-  margin-bottom: 30px; }
+  margin-bottom: 24px; }
 
 .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 27px; }
+  margin-bottom: 31px; }
 
 .form-block {
   position: relative;
@@ -363,10 +366,9 @@ img {
   -ms-flex: 1;
   flex: 1; }
   .form-block__date {
-    width: 33.3%;
-    margin-right: 15px; }
+    width: 33.3%; }
   .form-block__text {
-    margin-right: 44px; }
+    margin-right: 40px; }
     .form-block__text--right {
       margin-left: 50px;
       margin-right: 30px; }
@@ -375,7 +377,8 @@ img {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px 15px;
+  letter-spacing: -.5px;
+  padding: 10px 12px;
   width: 100%;
   background-color: #f2f2f2;
   border: 0;
@@ -390,8 +393,8 @@ img {
 
 .form-input__link {
   position: absolute;
-  left: 93%;
-  top: 15%; }
+  left: 94%;
+  top: 16.5%; }
   .form-input__link:hover svg {
     fill: #000; }
   .form-input__link:active svg {
@@ -399,23 +402,29 @@ img {
 
 .form-input__button {
   position: absolute;
-  left: 85%;
+  left: 88%;
   background: transparent;
   border: 0;
   outline: 0;
-  width: 15px;
-  height: 15px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .form-input__button--minus {
+    left: 53%; }
   .form-input__button:hover svg line {
     stroke: #000; }
   .form-input__button:active svg line {
     stroke: #81b3d2; }
 
-.form-input__button--plus {
-  left: 76%; }
-
 .form-submit {
   width: 100%;
-  padding: 20px  0;
+  padding: 17px  0;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
@@ -435,10 +444,8 @@ img {
 .card-map {
   background-image: url(../img/bg/map.jpg);
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
-  width: 100%;
-  min-height: 593px; }
+  width: 100%; }
   .card-map iframe {
     width: 100%;
     min-height: 593px; }
@@ -483,7 +490,7 @@ img {
     align-items: center;
     background: #81b3d2;
     width: 48px;
-    height: 48px;
+    height: 46px;
     margin-left: 5px;
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
@@ -522,7 +529,6 @@ img {
   width: 100%;
   background-image: url("../img/bg/filter background.jpg");
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   padding-top: 25px;
   padding-bottom: 10px;
@@ -656,7 +662,6 @@ img {
   width: 50px;
   margin-left: 5px;
   color: inherit;
-  font: inherit;
   background: 0;
   outline: 0;
   border: 0; }
@@ -846,7 +851,7 @@ img {
   justify-content: space-between; }
 
 .title__hotels {
-  width: 230px;
+  width: 240px;
   text-align: left;
   line-height: 22px;
   letter-spacing: .2px; }

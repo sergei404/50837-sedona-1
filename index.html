@@ -26,12 +26,9 @@
          </nav>
        </header>
 
-
-
        <main class="main-content">
-
          <section class="mountains">
-           <h2 class="visually-hidden">седона</h2>
+           <h2 class="visually-hidden">баннер</h2>
           <div class="mountains-wrap">
            <div class="mountains-wrap__img">
              <img src="img/content/welcome.png" width="458" height="352" alt="welcome" class="mountains-img">
@@ -39,13 +36,13 @@
              <img src="img/content/mask.png" width="1200" height="57" alt="mask" class="mountains-mask__img">
           </div>
            <div class="mountains-tagline">
-              <b class="mountains-title title">седона - небольшой городок в аризоне, заслуживающий большего!</b>
+              <b class="mountains-title title">седона &#8212; небольшой городок в аризоне, заслуживающий большего!</b>
               <p class="mountains-text">рассмотрим 5 причины по которым седона круче, чем гранд каньон!</p>
             </div>
          </section>
-
+        
          <section class="town">
-            <h2 class="visually-hidden">городок</h2>
+            <h2 class="visually-hidden">преимущества</h2>
            <ul class="town-list">
              <li class="town-item">
                <div class="town-wrap">
@@ -75,7 +72,7 @@
                <div class="town-wrap">
                       <img src="img/content/devil's.jpg" width="800" height="256" alt="devil's bridge">
                   <div class="town-real">
-                      <h3 class="town-title title">там есть мост дьявола</h3>
+                      <h3 class="town-title title">там есть <br> мост дьявола</h3>
                       <p class="town-number">&mdash; №2 &mdash;</p>
                       <p class="town-tagline"> да, по нему можно пройти если конечно вы осмелитесь </p>
                    </div>
@@ -108,32 +105,32 @@
          <div class="card-wrap">
            <b class="card-title">заинтересовались?</b>
            <p class="card-text">укажите предпологаемые даты поездки,<br> и мы покажем вам лучшее предложения гостиниц в седоне</p>
-           <a href="#" class="card-link">поиск гостиниц в седоне</a>
+           <a href="#" class="card-link">поиск гостиницы  в седоне</a>
             <form action="/echo" method="post" class="form">
             <div class="form-wrap">
               <div class="form-block__grupp">
                  <div class="form-row">
-                     <label class="form-block">
-                         <span class="form-block__date">дата заезда:</span>
-                         <input type="text" class="form-input form-input__date" placeholder="24 апреля 2017">
+                     <div class="form-block">
+                         <label for="arrival" class="form-block__date">дата заезда:</label>
+                         <input type="text" id="arrival" class="form-input form-input__date" placeholder="24 апреля 2017">
                          <a href="#" class="form-input__link">
                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" fill="#a9a9a9" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
                          </a>
-                     </lebel>
+                     </div>
                  </div>
                  <div class="form-row">
-                     <label class="form-block">
-                         <span class="form-block__date">дата выезда:</span>
-                         <input type="text" class="form-input form-input__date" placeholder="4 июля 2017">
+                     <div class="form-block">
+                         <label for="departure" class="form-block__date">дата выезда:</label>
+                         <input type="text" id="departure" class="form-input form-input__date" placeholder="4 июля 2017">
                          <a href="#" class="form-input__link">
                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" fill="#a9a9a9" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
                          </a>
-                     </lebel>
+                     </div>
                  </div>
                  <div class="form-row">
-                     <label class="form-block">
-                       <span class="form-block__text">взрослые:</span>
-                       <button class="form-input__button form-block__button--minus">
+                     <div class="form-block">
+                       <label for="grown" class="form-block__text">взрослые:</label>
+                       <button class="form-input__button--minus form-input__button">
                         <svg width="15" height="15">
                           <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                         </svg>
@@ -144,12 +141,11 @@
                           <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
                         </svg>
                       </button>
-                       <input type="text" class="form-input form-input__adults" value="2">
-                      </button>
-                     </label>
-                     <label class="form-block">
-                      <span class="form-block__text--right">дети:</span>
-                      <button class="form-input__button form-block__button--minus">
+                       <input type="text" id="grown" class="form-input form-input__adults" value="2">
+                     </div>
+                     <div class="form-block">
+                      <label for="babies" class="form-block__text--right">дети:</label>
+                      <button class="form-input__button--minus form-input__button">
                         <svg width="15" height="15">
                           <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                         </svg>
@@ -160,9 +156,8 @@
                           <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
                         </svg>
                       </button>
-                      <input type="text" class="form-input form-input__adults" value="0">
-                      </button>
-                    </label>   
+                      <input type="text" id="babies" class="form-input form-input__adults" value="0">
+                     </div>   
                  </div>
               </div>
               <button type="submit" class="form-submit">найти</button>
