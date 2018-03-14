@@ -44,11 +44,12 @@
 }
 
  .form {
+     min-width: 570px;
      font-weight: bold;
-    // display: none;
+     display: none;
      padding: 57px;
      position: absolute;
-     top: 32.3%;
+     top: 33.1%;
      left: 26.3%;
      width: 47.4%;
      background-color: #fff;
@@ -84,13 +85,14 @@
      &__text {
          margin-right: 40px;
          &--right {
-            margin-left: 50px;
+            margin-left: 45px;
             margin-right: 30px;
          }
      }
    }
  
    .form-input {
+       min-width: 345px;
      font-size: 14px;
      font-weight: bold;
      text-transform: uppercase;
@@ -101,6 +103,7 @@
      border: 0;
      outline: 0;
      &__adults {
+         min-width: 114px;
          text-align: center;
      }
      &:hover {
@@ -131,14 +134,12 @@
    .form-input__button {
        position: absolute;
        left: 88%;
+       top: 28%;
        background: transparent;
        border: 0;
        outline: 0;
-       display: flex;
-       justify-content: center;
-       align-items: center;
        &--minus {
-           left: 53%;
+           left: 50%;
        }
        &:hover {
          svg {
@@ -187,9 +188,9 @@
       background-image: url(../img/bg/map.jpg);
       @include cover;
       width: 100%;
-      //min-height: 593px;
+      min-height: 575px; 
       iframe {
         width: 100%;
-        min-height: 593px; 
+        min-height: 575px; 
       }
   }
