@@ -16,12 +16,17 @@ body {
   box-sizing: border-box; }
 
 body, html {
-  height: 100%; }
+  widows: 100%; }
 
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -226,8 +231,7 @@ img {
   align-items: center;
   -ms-flex-preferred-size: 33.3%;
   flex-basis: 33.3%;
-  padding-top: 45px;
-  padding-bottom: 60px; }
+  padding-top: 45px; }
 
 .town-real__service {
   padding-top: 58px;
@@ -252,19 +256,20 @@ img {
   display: block;
   width: 38%;
   line-height: 23px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 25px; }
   .town-title__service {
     margin-top: 28px;
     margin-bottom: 25px; }
 
 .town-number {
-  margin-top: 25px;
   margin-bottom: 20px; }
 
 .town-tagline {
   display: block;
   width: 75%;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 60px; }
   .town-tagline__small {
     width: 70%; }
 
@@ -323,7 +328,6 @@ img {
     background-color: #503e33; }
 
 .form {
-  min-width: 570px;
   font-weight: bold;
   display: none;
   padding: 57px;
@@ -352,6 +356,7 @@ img {
   margin-bottom: 24px; }
 
 .form-row {
+  min-width: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +460,7 @@ img {
   .footer-absolute {
     position: absolute;
     width: 1200px;
-    margin-top: -123px;
+    margin-top: -120px;
     background-color: rgba(255, 255, 255, 0.9); }
 
 .footer-wrap {

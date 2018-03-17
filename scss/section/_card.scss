@@ -44,7 +44,6 @@
 }
 
  .form {
-     min-width: 570px;
      font-weight: bold;
      display: none;
      padding: 57px;
@@ -70,6 +69,7 @@
  }
  
  .form-row {
+     min-width: 460px;
      display: flex;
      margin-bottom: 31px;
    }
@@ -92,7 +92,7 @@
    }
  
    .form-input {
-       min-width: 345px;
+     min-width: 345px;
      font-size: 14px;
      font-weight: bold;
      text-transform: uppercase;
@@ -111,7 +111,7 @@
      }
      &:focus {
          outline: 3px solid #e5e5e5;
-         background-color: #fff;
+          background-color: #fff;
      }
    }
  
