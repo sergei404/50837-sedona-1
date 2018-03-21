@@ -186,6 +186,7 @@
 
   .card-map {
       background-image: url(../img/bg/map.jpg);
+      background-position: center center;
       @include cover;
       width: 100%;
       min-height: 575px; 

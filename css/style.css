@@ -8,8 +8,8 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  -webkit-box-shadow: 0 0 0 0 #b0b0b0;
-  box-shadow: 0 0 0 0 #b0b0b0; }
+  -webkit-box-shadow: 5px 0 15px -10px #000, -5px 0 15px -10px #000;
+  box-shadow: 5px 0 15px -10px #000, -5px 0 15px -10px #000; }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -445,6 +445,7 @@ img {
 
 .card-map {
   background-image: url(../img/bg/map.jpg);
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -723,6 +724,7 @@ img {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  outline: 0;
   cursor: pointer;
   -webkit-transition-duration: .5s;
   -o-transition-duration: .5s;
@@ -938,7 +940,16 @@ img {
   display: flex; }
 
 .hotels-rating_item {
+  position: relative;
   margin-left: 5px; }
+  .hotels-rating_item::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    background-image: url("../img/icons/star.svg");
+    background-repeat: no-repeat; }
 
 .hotels-rating__stock {
   padding: 3px 13px;
