@@ -16,7 +16,7 @@
 .card-title {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .card-text {
@@ -26,9 +26,13 @@
 }
 
 .card-link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
     width: 47.4%;
     text-align: center;
-    padding: 33px ;
+    padding: 33px;
     font-size: 21px;
     font-weight: bold;
     color: #fff;
@@ -44,11 +48,10 @@
 }
 
  .form {
-     font-weight: bold;
      display: none;
      padding: 57px;
      position: absolute;
-     top: 33.1%;
+     top: 33.2%;
      left: 26.3%;
      width: 47.4%;
      background-color: #fff;
@@ -117,7 +120,7 @@
  
    .form-input__link {
       position: absolute;
-      left: 94%;
+      left: 93.7%;
       top: 16.5%;
       &:hover {
            svg {
@@ -133,13 +136,13 @@
  
    .form-input__button {
        position: absolute;
-       left: 88%;
+       left: 87%;
        top: 28%;
        background: transparent;
        border: 0;
        outline: 0;
        &--minus {
-           left: 50%;
+           left: 52%;
        }
        &:hover {
          svg {

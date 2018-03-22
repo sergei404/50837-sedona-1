@@ -1,6 +1,6 @@
 .footer {
    width: 100%; 
-   padding-top: 40px;
+   padding-top: 39px;
    padding-bottom: 35px;
    &-absolute {
     position: absolute;
@@ -23,6 +23,13 @@
     font-weight: bold;
 }
 
+.footer-list,
+.footer-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .footer-list {
     flex-basis: 33.3%;
     display: flex;
@@ -33,7 +40,7 @@
         background: $blue;
         width: 48px;
         height: 46px;
-        margin-left: 5px;
+        margin-left: 3px;
         transition-duration: .5s;
         &:hover {
             background-color: #669ec0;
@@ -58,6 +65,7 @@
 
 .footer-html__link {
     margin-left: 10px;
+    padding-top: 4px;
     transition-duration: .5s;
     &:hover {
          svg {

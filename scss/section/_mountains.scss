@@ -28,16 +28,22 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 57px;
-      padding-bottom: 50px;
+      padding-top: 60px;
+      padding-bottom: 52px;
       margin-top: -1px;
+  }
+
+  .mountains-title,
+  .mountains-text {
+      margin: 0;
+      padding: 0;
   }
 
   .mountains-title {
       display: block;
       width: 38%;
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 33px;
       letter-spacing: .1px;
   }
 

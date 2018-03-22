@@ -2,3 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  @function rem($px) {
+    @return $px/14px + 0rem;
+}

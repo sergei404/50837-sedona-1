@@ -1,8 +1,8 @@
 .header {
   position: relative;
   width: 100%;
-  min-height: 60px;
-  padding-top: 20px;
+  padding-top: 16px;
+  padding-bottom: 18px;
   padding-right: 6%;
   padding-left: 6%;
   background-color: #fff;
@@ -15,6 +15,14 @@
     transform: translateX(-50%);
     margin: 0;
     z-index: 10;
+  }
+
+
+  .nav-list,
+  .nav-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   .nav-list {
@@ -39,6 +47,10 @@
 
 
   .nav-link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
     font-weight: bold;
     color: #262626;
     transition-duration: .5s;

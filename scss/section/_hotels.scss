@@ -1,6 +1,6 @@
 .hotels {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 33px;
 }
 
 .hotels-sorting {
@@ -24,6 +24,13 @@
     margin-right: 50px;
 }
 
+.hotels-sorting__list,
+.hotels-sorting__item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .hotels-sorting__list {
     display: flex;
 }
@@ -33,6 +40,11 @@
 }
 
 .hotels-sorting__link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 17px;
+    text-decoration: none;
     color: #cacaca;
     border-bottom: 1px dotted $blue; 
     transition-duration: .5s;
@@ -87,11 +99,18 @@
     
 }
 
+.hotels-list,
+.hotels-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .hotels-item {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 26px;
+    padding-bottom: 28px;
     padding-left: 6%;
     padding-right: 6%;
     border-top: 1px solid #e5e5e5;
@@ -104,6 +123,10 @@
 }
 
 .hotels-photo {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,20 +134,24 @@
 }
 
 .hotels-portrait {
-    min-height: 90px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .title__hotels {
-    width: 240px;;
+    padding: 0;
+    margin: 0;
+    width: 240px;
     text-align: left;
-    line-height: 22px;
+    line-height: 20px;
     letter-spacing: .2px;
      a {
-       color: #000;
-       transition-duration: .5s;
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: #000;
+        transition-duration: .5s;
      }
      a:hover {
          color: $blue;
@@ -145,21 +172,23 @@
 }
 
 .hotels-link {
-    margin-top: 12px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
     padding: 3px 16px;
     color: #fff;
     font-weight: bold;
     &__blue {
         background-color: $blue;
-        margin-right: 10px;
+        margin-right: 8px;
         transition-duration: .5s;
         &:hover {
             background-color: #669ec0;
         }
         &:active {
             color: #94b9d2;
-            background-color: #5496bd;
-            //filter: contrast(85%) brightness(90%); 
+            background-color: #5496bd; 
         }
     }
     &__red {
@@ -171,7 +200,6 @@
         &:active {
             color: #65564e;
             background-color: #503e33;
-            //filter: contrast(55%) brightness(75%);
         }
     }
 }
@@ -181,6 +209,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.hotels-rating__list,
+.hotels-rating_item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .hotels-rating__list {
