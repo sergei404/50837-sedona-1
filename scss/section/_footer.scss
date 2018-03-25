@@ -1,13 +1,11 @@
 .footer {
    width: 100%; 
-   padding-top: 39px;
+   padding-top: 38px;
    padding-bottom: 35px;
+   background-color: rgba(255,255,255, 0.9);
    &-absolute {
-    position: absolute;
-    width: 1200px;
-    margin-top: -110px;
-    background-color: rgba(255,255,255, 0.9);
-
+       position: relative;
+       margin-top: -110px;
    }
 }
 
@@ -19,6 +17,7 @@
 
 .footer-vizit {
     flex-basis: 33.3%;
+    min-width: 400px;
     text-align: center;
     font-weight: bold;
 }
@@ -32,30 +31,37 @@
 
 .footer-list {
     flex-basis: 33.3%;
+    min-width: 400px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     .footer-item {
         display: flex;
         justify-content: center;
         align-items: center;
         background: $blue;
-        width: 48px;
-        height: 46px;
-        margin-left: 3px;
+        width: 46px;
+        height: 48px;
+        margin-left: 5px;
         transition-duration: .5s;
+        &:first-child {
+            margin-left: 0;
+        }
         &:hover {
             background-color: #669ec0;
         }
-        &:active {
+        &:active  {
             background-color: #5496bd;
             svg {
                 fill: #88b6d1;
-            }
+            }  
         }
     }
 }
 
 .footer-copyright {
     flex-basis: 33.3%;
+    min-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,17 +70,13 @@
 
 
 .footer-html__link {
-    margin-left: 10px;
+    margin-left: 8px;
     padding-top: 4px;
     transition-duration: .5s;
-    &:hover {
-         svg {
+    svg:hover {
             fill: #81b3d2;
-        }
-    }
-    &:active {
-        svg {
+     }
+    svg:active {
             fill: #bdbbbc;
-        }
     }
 }

@@ -223,18 +223,9 @@
 }
 
 .hotels-rating_item {
-    position: relative;
     margin-left: 5px;
-    &::before {
-       position: absolute;
-       left: 0;
-       top: 0;
-       content: "";
-       display: block;
-       background-image: url("../img/icons/star.svg");
-       background-repeat: no-repeat;
-    }
-}
+}  
+
 
 .hotels-rating__stock {
     padding: 3px 13px;
