@@ -672,7 +672,7 @@ img {
   .shape-form__input:disabled + .shape-form__fake::before {
     border-color: #6a6a6a; }
   .shape-form__input:disabled + .shape-form__fake::after {
-    background-color: #618eb6; }
+    background-color: #5483ad; }
 
 .shape-block__filter {
   min-width: 319px; }
