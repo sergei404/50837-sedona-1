@@ -8,7 +8,7 @@ body {
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  font-family: 'PT Sans', 'Arial', sans-serif; }
+  font-family: "PT Sans", "Arial", sans-serif; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -37,14 +37,15 @@ input[type=text]::-ms-clear {
   overflow: hidden; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   overflow: hidden; }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0 -10px 15px 10px #e4e4e4; }
 
 .title {
   font-size: 21px;
@@ -99,7 +100,8 @@ img {
   margin-right: 11.5%; }
 
 .nav-link {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -114,6 +116,12 @@ img {
     color: #b9d5e6; }
 
 .active {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
   color: #9e897b; }
 
 .mountains {
@@ -164,7 +172,7 @@ img {
   align-items: center;
   padding-top: 60px;
   padding-bottom: 52px;
-  margin-top: -1px; }
+  margin-top: -.5px; }
 
 .mountains-title,
 .mountains-text {
@@ -254,7 +262,7 @@ img {
     height: 75px;
     background-image: url("../img/icons/icon-2.svg"); }
 
-.town-title { /*у них есть класс title в котором прописан черныйцвет стр.49*/
+.town-title { /*у них есть класс title в котором прописан черный цвет стр.49*/
   margin: 0;
   padding: 0;
   display: block;
@@ -320,6 +328,8 @@ img {
   padding: 33px;
   font-size: 21px;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -2px;
   color: #fff;
   background-color: #766357;
   -webkit-transition-duration: .5s;
@@ -338,13 +348,34 @@ img {
   top: 33.2%;
   left: 26.3%;
   width: 47.4%;
-  background-color: #fff; }
+  background-color: #fff;}
+
+  @keyframes height {
+    from {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(50px);
+    }
+    40% {
+       transform: translateY(100px);
+    }
+    60% {
+      transform: translateY(150px);
+     }
+     80% {
+     transform: translateY(200px);
+    }
+    100% {
+    transform: translateY(2500px);
+    }
+}
 
 .form-show {
   height: 100%;
   max-height: 400px;
-  padding: 57px; 
-  }
+  padding: 57px;
+  animation: lift 14s; }
 
  
 
@@ -414,8 +445,10 @@ img {
 
 .form-input__link {
   position: absolute;
-  left: 93.7%;
-  top: 16.5%; }
+  left: 92.5%;
+  top: 15%;
+  border: 0;
+  background-color: transparent; }
   .form-input__link:hover svg {
     fill: #000; }
   .form-input__link:active svg {
@@ -510,14 +543,14 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-left: -5px; }
   .footer-item {
     margin-left: 5px;
+    margin-bottom: 5px;
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
     transition-duration: .5s; }
-    .footer-list .footer-item:first-child {
-      margin-left: 0; }
       .footer-link {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -757,10 +790,8 @@ img {
   .shape-toggle__max {
     left: 80%; }
   .shape-toggle:hover {
-    top: -11px;
-    width: 5px;
-    height: 5px;
-    border: 10px solid #ffffff; }
+    width: 6px;
+    height: 6px; }
 
 .shape-btn {
   display: block;
@@ -807,8 +838,10 @@ img {
   font-size: 12px; }
 
 .hotels-sorting__title {
+  display: block;
+  min-width: 125px;
   font-weight: bold;
-  margin-right: 50px; }
+  margin-right: 40px; }
 
 .hotels-sorting__list,
 .hotels-sorting__item {
@@ -819,7 +852,8 @@ img {
 .hotels-sorting__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .hotels-sorting__item {
   margin-left: 35px; }
@@ -843,9 +877,11 @@ img {
   .hotels-sorting__link--active {
     color: #81b3d2;
     border: 0; }
+.hotels-sorting__button {
+  display: flex;
+  align-items: center;
+}
 
-.hotels-sorting__submit {
-  display: inline-block; }
   .hotels-sorting__submit::before {
     content: "";
     display: block;
@@ -898,7 +934,9 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-
+.pfoto {
+  min-width: 135px;
+}
 .hotels-photo {
   display: block;
   padding: 0;
@@ -927,7 +965,7 @@ img {
 .title__hotels {
   padding: 0;
   margin: 0;
-  width: 240px;
+  min-width: 240px;
   text-align: left;
   line-height: 20px;
   letter-spacing: .2px; }
