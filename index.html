@@ -21,9 +21,7 @@
   <div class="container">
     <header class="header">
       <div class="logo">
-        <a href="#" class="logo-link">
           <img src="img/content/logo.png" width="138" height="70" alt="logo" class="logo-img">
-        </a>
       </div>
       <nav class="nav">
         <ul class="nav-list">
@@ -69,10 +67,10 @@
               </div>
               <img src="img/content/town.jpg" width="800" height="256" alt="town">
             </div>
-          </li>
+            </li>
           <li class="town-item">
             <div class="town-wrap">
-              <img src="img/content/devil's.jpg" width="800" height="256" alt="devil's bridge">
+               <img src="img/content/devil's.jpg" width="800" height="256" alt="devil's bridge">
               <div class="town-real">
                 <h3 class="town-title title town-title__devil">там есть мост дьявола</h3>
                 <p class="town-number">&mdash; №2 &mdash;</p>
@@ -97,19 +95,19 @@
           </li>
           <li class="town-item">
             <ul class="town-wrap town-wrap__list">
-              <li class="town-real town-real__service town-real__service--one">
-                <h4 class="town-title__service title">жилье</h4>
-                <p class="town-tagline">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="town-real town-real__service town-real__service--two">
-                <h4 class="town-title__service title">еда</h4>
-                <p class="town-tagline">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="town-real town-real__service town-real__service--three">
-                <h4 class="town-title__service title">сувениры</h4>
-                <p class="town-tagline">не только китайского, но и местного производства</p>
-              </li>
-            </ul>
+                <li class="town-real town-real__service town-real__service--one">
+                  <h4 class="town-title__service title">жилье</h4>
+                  <p class="town-tagline">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="town-real town-real__service town-real__service--two">
+                  <h4 class="town-title__service title">еда</h4>
+                  <p class="town-tagline">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="town-real town-real__service town-real__service--three">
+                  <h4 class="town-title__service title">сувениры</h4>
+                  <p class="town-tagline">не только китайского, но и местного производства</p>
+                </li>
+              </ul>
           </li>
         </ul>
       </section>
@@ -121,14 +119,15 @@
           <p class="card-text">укажите предпологаемые даты поездки,
             <br> и мы покажем вам лучшее предложения гостиниц в седоне</p>
           <button class="card-link">поиск гостиницы в седоне</button>
-          <form action="/echo" method="post" class="form">
+          <form action="https://echo.htmlacademy.ru" method="post" class="form form-modal form-show">
             <div class="form-wrap">
               <div class="form-block__grupp">
                 <div class="form-row">
                   <div class="form-block">
                     <label for="arrival" class="form-block__date">дата заезда:</label>
-                    <input type="text" id="arrival" class="form-input form-input__date" placeholder="24 апреля 2017">
-                    <button class="form-input__link">
+                    <input type="text" id="arrival" name="arrival" class="form-input form-input__date" value="24 апреля 2017">
+                    <button type="button" class="form-input__link">
+                      <span class="visually-hidden">календарь</span>
                       <svg class="footer-svg" width="21" height="22" fill="#a9a9a9">
                         <use xlink:href="#calendar"></use>
                       </svg>
@@ -138,8 +137,9 @@
                 <div class="form-row">
                   <div class="form-block">
                     <label for="departure" class="form-block__date">дата выезда:</label>
-                    <input type="text" id="departure" class="form-input form-input__date" placeholder="4 июля 2017">
-                    <button class="form-input__link">
+                    <input type="text" id="departure" name="departure" class="form-input form-input__date" value="4 июля 2017">
+                    <button type="button" class="form-input__link">
+                      <span class="visually-hidden">календарь</span>
                       <svg class="footer-svg" width="21" height="22" fill="#a9a9a9">
                         <use xlink:href="#calendar"></use>
                       </svg>
@@ -149,12 +149,14 @@
                 <div class="form-row">
                   <div class="form-block">
                     <label for="grown" class="form-block__text">взрослые:</label>
-                    <button class="form-input__button--minus form-input__button">
+                    <button type="button" class="form-input__button--minus form-input__button">
+                      <span class="visually-hidden">минус</span>
                       <svg width="15" height="15">
                         <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                       </svg>
                     </button>
-                    <button class="form-input__button">
+                    <button type="button" class="form-input__button">
+                      <span class="visually-hidden">плюс</span>
                       <svg width="15" height="15">
                         <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                         <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
@@ -164,12 +166,14 @@
                   </div>
                   <div class="form-block">
                     <label for="babies" class="form-block__text--right">дети:</label>
-                    <button class="form-input__button--minus form-input__button">
+                    <button type="button" class="form-input__button--minus form-input__button">
+                      <span class="visually-hidden">минус</span>
                       <svg width="15" height="15">
                         <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                       </svg>
                     </button>
-                    <button class="form-input__button">
+                    <button type="button" class="form-input__button">
+                      <span class="visually-hidden">плюс</span>
                       <svg width="15" height="15">
                         <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                         <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
@@ -193,7 +197,7 @@
 
 
 
-    <footer class="footer footer-absolute"><!--в макете который нам предоставлен так же видны артифакты, т.к. у фона опасити 0.9-->
+    <footer class="footer footer-absolute"><!--в макете который нам предоставлен так же видны артифакты, т.к. у фона опасити 0.9 и в видеопревью макета седоны виден точно такой же артифакт-->
       <div class="footer-wrap">
         <div class="footer-vizit title">#vizitsedona</div>
         <div class="footer-social">
