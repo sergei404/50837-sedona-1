@@ -238,12 +238,6 @@ img {
   width: 66.66666;
 }
 
-.town-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
- // -ms-flex-wrap: wrap;
- // flex-wrap: wrap;}
 
 .town-real {
   display: -webkit-box;
@@ -417,19 +411,19 @@ img {
   }
 }
     
-.form {
+.modal {
   display: none;
   position: absolute;
   background-color: #fff; }
 
-.form-show {
+.modal-show {
   display: block;
   animation: bounce .8s;}
 
-.form-error {
+.modal-error {
     animation: shake 0.6s;}
 
-.form-modal {
+.modal-form {
   top: 100%;
   left: 26.3%;
   width: 47.4%;
@@ -619,7 +613,7 @@ img {
       background-color: #669ec0; }
     .footer-list .footer-item:active {
       background-color: #5496bd; }
-      .footer-list .footer-item:active svg {
+      .footer-list .footer-item:active svg{
         fill: #88b6d1; }
 
 .footer-copyright {

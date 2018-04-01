@@ -12,7 +12,7 @@
   </script>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -119,7 +119,8 @@
           <p class="card-text">укажите предпологаемые даты поездки,
             <br> и мы покажем вам лучшее предложения гостиниц в седоне</p>
           <button class="card-link">поиск гостиницы в седоне</button>
-          <form action="https://echo.htmlacademy.ru" method="post" class="form form-modal form-show">
+          <div class="modal modal-form modal-show">
+          <form action="https://echo.htmlacademy.ru" method="post" class="form">
             <div class="form-wrap">
               <div class="form-block__grupp">
                 <div class="form-row">
@@ -162,7 +163,7 @@
                         <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
                       </svg>
                     </button>
-                    <input type="text" id="grown" class="form-input form-input__adults" value="2">
+                    <input type="text" id="grown"  class="form-input form-input__adults" value="2">
                   </div>
                   <div class="form-block">
                     <label for="babies" class="form-block__text--right">дети:</label>
@@ -187,6 +188,7 @@
             </div>
           </form>
         </div>
+        </div>
         <div class="card-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d419393.59895639285!2d-111.78971539480634!3d34.8606028408091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1520171318180"
             allowfullscreen></iframe>
@@ -203,7 +205,7 @@
         <div class="footer-social">
           <ul class="footer-list">
             <li class="footer-item">
-              <a href="#twitter" class="footer-link">
+              <a href="#" class="footer-link">
                 <span class="visually-hidden">twitter</span>
                 <svg class="footer-svg" width="17" height="15" fill="#ffffff">
                   <use xlink:href="#twitter"></use>
@@ -211,7 +213,7 @@
               </a>
             </li>
             <li class="footer-item">
-              <a href="#facebook" class="footer-link">
+              <a href="#" class="footer-link">
                 <span class="visually-hidden">facebook</span>
                 <svg class="footer-svg" width="12" height="22" fill="#ffffff">
                   <use xlink:href="#fb-icon"></use>
@@ -219,7 +221,7 @@
               </a>
             </li>
             <li class="footer-item">
-              <a href="#youtube" class="footer-link">
+              <a href="#" class="footer-link">
                 <span class="visually-hidden">youtube</span>
                 <svg class="footer-svg" width="20" height="16" fill="#ffffff">
                   <use xlink:href="#youtube"></use>
