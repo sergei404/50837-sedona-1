@@ -1,42 +1,35 @@
-//var link = document.querySelector(".card-link");
-//var popup = document.querySelector(".form-modal");
+var link = document.querySelector(".card-link");
+var popup = document.querySelector(".modal");
+//var arrival = document.querySelector("#arrival");
+
+Link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  //if (popup.classList.contains("modal-show")) {
+   // popup.classList.remove("modal-error");
+ // }
+  popup.classList.toggle("modal-show");
+ // arrival.focus();
+});
 
 //var form = Popup.querySelector("form");
-//var arrival = document.querySelector("name=arrival");
-//var departure = document.querySelector("name=departure");
+//var departure = document.querySelector("#departure");
 
-//link.addEventListener("click", function (evt) {
+//form.addEventListener("submit", function (evt) {
+ // if (!arrival.value || !departure.value) {
    // evt.preventDefault();
-    
-   // popup.classList.toggle("form-show");
-    //arrival.focus();
+   // popup.classList.remove("modal-error");
+   // popup.offsetWidth = Popup.offsetWidth;
+   // popup.classList.add("modal-error");
+ // }
 //});
 
 
+/*var link = document.querySelector(".card-link");
 
-/*var Form = Popup.querySelector("form");
-var departure = document.querySelector("#departure");*/
-
-//Form.addEventListener("submit", function (evt) {
-  //if (!arrival.value || !departure.value) {
-    //evt.preventDefault();
-   // Popup.classList.remove("form-error");
-   // Popup.offsetWidth = Popup.offsetWidth;
-    //Popup.classList.add("form-error");
-  //}
-//});
-
-/*if (Popup.classList.contains("form-show")) {
-    Popup.classList.remove("form-error");
-*/
-
-     
-var link = document.querySelector(".card-link");
-  
 var popup = document.querySelector(".modal");
 
 var form = popap.querySelector("form");
-var arrival = popup.querySelector("[name=arrival]");
+var arrival = document.querySelector("name=arrival");
 var departure = popup.querySelector("[name=departure]");
 
 link.addEventListener("click", function (evt) {
@@ -46,7 +39,7 @@ link.addEventListener("click", function (evt) {
   }
 
 
-  popup.classList.add("form-show");
+  popup.classList.toggle("modal-show");
   arrival.focus();
 });
 
@@ -57,8 +50,6 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-  } 
+  }
 });
-
-
-     
+*/
