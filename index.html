@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>sedona</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/minnormalize.css" rel="stylesheet">
   <link href="css/min.css" rel="stylesheet">
 </head>
 
@@ -114,7 +114,7 @@
           <b class="card-title">заинтересовались?</b>
           <p class="card-text">укажите предпологаемые даты поездки,
             <br> и мы покажем вам лучшее предложения гостиниц в седоне</p>
-          <button class="card-link">поиск гостиницы в седоне</button>
+          <button type="button" class="card-link">поиск гостиницы в седоне</button>
           <div class="modal modal-form modal-show">
             <form action="https://echo.htmlacademy.ru" method="post" class="form">
               <div class="form-wrap">
@@ -122,7 +122,7 @@
                   <div class="form-row">
                     <div class="form-block">
                       <label for="arrival" class="form-block__date">дата заезда:</label>
-                      <input type="text" id="arrival" name="arrival" class="form-input form-input__date" value="24 апреля 2017">
+                      <input type="text" id="arrival" name="arrival" class="form-input form-input__date" placeholder="24 апреля 2017">
                       <button type="button" class="form-input__link">
                       <span class="visually-hidden">календарь</span>
                       <svg class="footer-svg" width="21" height="22" fill="#a9a9a9">
@@ -134,7 +134,7 @@
                   <div class="form-row">
                     <div class="form-block">
                       <label for="departure" class="form-block__date">дата выезда:</label>
-                      <input type="text" id="departure" name="departure" class="form-input form-input__date" value="4 июля 2017">
+                      <input type="text" id="departure" name="departure" class="form-input form-input__date" placeholder="4 июля 2017">
                       <button type="button" class="form-input__link">
                       <span class="visually-hidden">календарь</span>
                       <svg class="footer-svg" width="21" height="22" fill="#a9a9a9">
@@ -307,7 +307,7 @@
       </symbol>
     </svg>
   </div>
-  <script src="js/main.js"></script>
+  <script src="js/min.js"></script>
 </body>
 
 </html>
