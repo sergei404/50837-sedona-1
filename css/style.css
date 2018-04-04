@@ -506,13 +506,13 @@ img {
   }
 }
 
-.js .modal {
+.modal {
   display: none;
   position: absolute;
   background-color: #fff;
 }
 
-.js .modal-show {
+ .modal-show {
   display: block;
   animation: bounce 1s;
 }
